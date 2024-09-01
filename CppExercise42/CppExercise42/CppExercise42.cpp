@@ -19,7 +19,7 @@ int main() {
 
 	int NumberOfHours = Hours + 24 * Days, NumberOfMinutes = Minutes + 60 * NumberOfHours, NumberOfSeconds = Seconds + 60 * NumberOfMinutes;
 
-	cout << "Total number of seconds : " << NumberOfSeconds;
+	cout << "Total number of seconds : " << NumberOfSeconds << " Seconds";
 
 	return 0;
 }
