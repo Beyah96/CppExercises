@@ -13,7 +13,7 @@ int main() {
 
 	float area = PI * pow(radius, 2);
 
-	cout << "The area of your circle is : " << area;
+	cout << "The area of your circle is : " << ceil(area);
 
 	return 0;
 }

@@ -13,5 +13,5 @@ int main() {
 	cout << "Enter the power M : ";
 	cin >> M;
 
-	cout << "The result is  : " << pow(Number, M);
+	cout << "The result is  : " << round(pow(Number, M));
 }

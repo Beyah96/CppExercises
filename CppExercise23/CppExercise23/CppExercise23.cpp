@@ -20,6 +20,6 @@ int main() {
 	int p = (side1 + side2 + side3) / 2;
 	float area = PI * pow((side1 * side2 * side3) / (4 * sqrt(p * (p - side1) * (p - side2) * (p - side3))), 2);
 
-	cout << "The area of your cirle is : " << area;
+	cout << "The area of your cirle is : " << round(area);
 	return 0;
 }

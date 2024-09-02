@@ -13,7 +13,7 @@ int main() {
 
 	float area = (pow(side, 2) * PI) / 4;
 
-	cout << "Your circle's area is : " << area;
+	cout << "Your circle's area is : " << ceil(area);
 
 	return 0;
 }

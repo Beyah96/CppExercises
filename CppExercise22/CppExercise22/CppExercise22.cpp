@@ -16,7 +16,7 @@ int main() {
 
 	float area = (PI * pow(base, 2)) / (4 * (2 * side - base) * (2 * side + base));
 
-	cout << "Your circle's area is : " << area;
+	cout << "Your circle's area is : " << floor(area);
 
 	return 0;
 
