@@ -2,6 +2,13 @@
 using namespace std;
 
 
+void exchangeNumbers(int num1, int num2) {
+	int temp = num1;
+	num1 = num2;
+	num2 = temp;
+	cout << "After swap the order will be : \n" << "* " << num1 << "\n* " << num2;
+}
+
 int main() {
 
 	int Number1, Number2;
@@ -12,12 +19,11 @@ int main() {
 	cout << "Enter the second number : ";
 	cin >> Number2;
 
-	int temp = Number1;
-	Number1 = Number2;
-	Number2 = temp;
-
 	cout << "The entred numbers in the order are : \n" << "* " << Number1 << "\n* " << Number2 << endl;
-	cout << "After swap the order will be : \n" << "* " << Number1 << "\n* " << Number2;
+
+	exchangeNumbers(Number1, Number2);
+
+	
 
 	return 0;
 
