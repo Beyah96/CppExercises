@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+int SumThreeNumbers(int a, int b, int c) {
+
+	return a + b + c;
+}
 int main() {
 	int a, b, c;
 
@@ -13,9 +17,7 @@ int main() {
 	cout << "Please enter your third number: ";
 	cin >> c;
 
-	int Total = a + b + c;
-
-	cout << a << " +\n" << b << " +\n" << c << "\n-------------------------\n" << "Total = " << Total;
+	cout << a << " +\n" << b << " +\n" << c << "\n-------------------------\n" << "Total = " << SumThreeNumbers(a, b, c);
 
 	return 0;
 
