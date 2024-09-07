@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int GetNumberOfSeconds(short Days, short Hours, short Minutes, short Seconds) {
+	int NumberOfHours = Hours + 24 * Days, NumberOfMinutes = Minutes + 60 * NumberOfHours, NumberOfSeconds = Seconds + 60 * NumberOfMinutes;
+	return NumberOfSeconds;
+}
+
 int main() {
 	
 	short Days, Hours, Minutes, Seconds;
@@ -17,9 +22,8 @@ int main() {
 	cout << "Enter the number of seconds : ";
 	cin >> Seconds;
 
-	int NumberOfHours = Hours + 24 * Days, NumberOfMinutes = Minutes + 60 * NumberOfHours, NumberOfSeconds = Seconds + 60 * NumberOfMinutes;
-
-	cout << "Total number of seconds : " << NumberOfSeconds << " Seconds";
+	
+	cout << "Total number of seconds : " << GetNumberOfSeconds(Days, Hours, Minutes, Seconds)<< " Seconds";
 
 	return 0;
 }
