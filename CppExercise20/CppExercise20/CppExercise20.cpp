@@ -3,17 +3,23 @@
 
 using namespace std;
 
+float CalculateCircleArea( float side) {
+
+	float const PI = 3.14;
+	float area = (pow(side, 2) * PI) / 4;
+
+
+	return area;
+}
+
 int main() {
 
 	float side;
-	const float PI = 3.14;
 
 	cout << "Enter the square's side : ";
 	cin >> side;
 
-	float area = (pow(side, 2) * PI) / 4;
-
-	cout << "Your circle's area is : " << ceil(area);
+	cout << "Your circle's area is : " << ceil(CalculateCircleArea(side));
 
 	return 0;
 }
