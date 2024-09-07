@@ -3,6 +3,10 @@
 
 using namespace std;
 
+float CalculateArea( float side, float diagonal) {
+
+	return side * sqrt(pow(diagonal, 2) - pow(side, 2));
+}
 int main() {
 
 	float side, diagonal;
@@ -13,9 +17,8 @@ int main() {
 	cout << "Please enter the diagonal : ";
 	cin >> diagonal;
 
-	float area = side * sqrt(pow(diagonal, 2) - pow(side, 2));
 
-	cout << "The area of your rectangle is : " << area;
+	cout << "The area of your rectangle is : " << CalculateArea(side, diagonal);
 
 	return 0;
 }
