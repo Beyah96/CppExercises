@@ -3,10 +3,17 @@
 
 using namespace std;
 
+float GetCircleArea(float base, float side) {
+
+	const float PI = 3.14;
+
+	float area = (PI * pow(base, 2)) / (4 * (2 * side - base) * (2 * side + base));
+	return area;
+}
+
 int main() {
 
 	float base, side;
-	const float PI = 3.14;
 
 	cout << "Please enter the side of your isocel triangle : ";
 	cin >> side;
@@ -14,9 +21,8 @@ int main() {
 	cout << "Please enter the base of your isocel triangle : ";
 	cin >> base;
 
-	float area = (PI * pow(base, 2)) / (4 * (2 * side - base) * (2 * side + base));
 
-	cout << "Your circle's area is : " << floor(area);
+	cout << "Your circle's area is : " << floor(GetCircleArea(base, side));
 
 	return 0;
 
