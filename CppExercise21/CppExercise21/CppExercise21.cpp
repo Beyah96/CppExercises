@@ -3,17 +3,23 @@
 
 using namespace std;
 
+float CalculateCircleAreaFromCircumference(float circumference) {
+
+	const float PI = 3.14;
+
+	float area = pow(circumference, 2) / (4 * PI);
+	return area;
+
+}
+
 int main() {
 	
 	float circumference;
-	const float PI = 3.14;
 
 	cout << "Enter your circle's circumference : ";
 	cin >> circumference;
 
-	float area = pow(circumference, 2) / (4 * PI);
-
-	cout << "The area of your circle is : " << floor(area);
+	cout << "The area of your circle is : " << floor(CalculateCircleAreaFromCircumference(circumference));
 
 	return 0;
 }
