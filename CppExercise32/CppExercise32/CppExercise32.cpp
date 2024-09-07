@@ -3,6 +3,10 @@
 
 using namespace std;
 
+void GetYourNumberPowered(int Number, int M) {
+	cout << "The result is  : " << round(pow(Number, M));
+}
+
 int main() {
 
 	int Number, M;
@@ -13,5 +17,8 @@ int main() {
 	cout << "Enter the power M : ";
 	cin >> M;
 
-	cout << "The result is  : " << round(pow(Number, M));
+	GetYourNumberPowered(Number, M);
+
+	return 0;
+	
 }
