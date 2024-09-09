@@ -35,6 +35,9 @@ struct stPerson {
 
 };
 
+
+
+
 int main() {
 	stPerson Person;
 	Person.Name = "Mohamed";
