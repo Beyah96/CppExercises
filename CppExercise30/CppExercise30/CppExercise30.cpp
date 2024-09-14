@@ -7,13 +7,18 @@ int ReadNumber() {
 	int N;
 	cout << "Enter please your number : ";
 	cin >> N;
+	while (N < 0) {
+		cout << "Your number is negative, please enter a positive number : ";
+		cin >> N;
+	}
 	return N;
 }
 int Factorial(int N) {
-	int Product = 1;
+	int Product = 1, i = 1;
 	if (N != 0) {
-		for (int i = 1; i <= N; i++) {
+		while (i <= N) {
 			Product *= i;
+			i++;
 		}
 	}
 	return Product;
