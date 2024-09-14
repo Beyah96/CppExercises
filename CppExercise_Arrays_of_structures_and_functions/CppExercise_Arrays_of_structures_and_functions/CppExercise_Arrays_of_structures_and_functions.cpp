@@ -29,27 +29,35 @@ void PrintPersonInfo(stPersonInfo Person) {
 
 }
 
-void ReadAllPersonsInfo(stPersonInfo Persons [2]) {
-	cout << "\n\n************* Read First Person info ****************\n";
-	ReadPersonInfo(Persons[0]);
-	cout << "\n\n************* Read Second Person info ****************\n";
-	ReadPersonInfo(Persons[1]);
+void ReadAllPersonsInfo(stPersonInfo Persons [100], int &NumberPersons) {
+	cout << "Enter the number of people do you want to insert : ";
+	cin >> NumberPersons;
+	for (int i = 0; i <= NumberPersons - 1; i++){
+		cout << "\n\n************* Read Person number " << i <<" info * ***************\n";
+		ReadPersonInfo(Persons[i]);
+	}
+	
 }
 
-void PrintAllPersonsInfo(stPersonInfo Persons[2]) {
-	cout << "\n\n************* Print First Person Info ****************\n";
-	PrintPersonInfo(Persons[0]);
-	cout << "\n\n************* Print Second Person Info ****************\n";
-	PrintPersonInfo(Persons[1]);
+void PrintAllPersonsInfo(stPersonInfo Persons[100], int NumberPersons) {
+	for (int i = 0; i <= NumberPersons - 1; i++) {
+		cout << "\n\n************* Print Person number " << i << " info ****************\n";
+		PrintPersonInfo(Persons[i]);
+	}
+	
 
 }
 
 int main() {
+	int NumberPersons;
+	
+	stPersonInfo Persons[100];
 
-	stPersonInfo Person, Persons[2];
-
-	ReadAllPersonsInfo(Persons);
-	PrintAllPersonsInfo(Persons);
+	ReadAllPersonsInfo(Persons, NumberPersons);
+	cout << "\n\n************* ********************* ****************\n";
+	cout << "\n\n              Print the list of info Cards              \n";
+	cout << "\n\n************* ********************* ****************\n";
+	PrintAllPersonsInfo(Persons, NumberPersons);
 	
 	return 0;
 
