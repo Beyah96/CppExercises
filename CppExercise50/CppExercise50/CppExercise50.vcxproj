@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7b283c17-a181-4fe3-a7af-df7075bfcb71}</ProjectGuid>
-    <RootNamespace>section28ForLoopandArrays</RootNamespace>
+    <ProjectGuid>{ac022127-b887-4894-a3f6-8ceb51bd5fe5}</ProjectGuid>
+    <RootNamespace>CppExercise50</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="section28_For_Loop_and Arrays.cpp" />
+    <ClCompile Include="CppExercise50.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

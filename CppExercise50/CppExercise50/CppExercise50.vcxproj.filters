@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CppExercise_nested_for_loops_Numbers_decremented_triangle.cpp">
+    <ClCompile Include="CppExercise50.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
