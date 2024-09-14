@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppExercise26_with_while_loop", "CppExercise26_with_while_loop\CppExercise26_with_while_loop.vcxproj", "{EE313BF7-DE88-439F-9557-D455DAAAF298}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Debug|x64.ActiveCfg = Debug|x64
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Debug|x64.Build.0 = Debug|x64
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Debug|x86.Build.0 = Debug|Win32
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Release|x64.ActiveCfg = Release|x64
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Release|x64.Build.0 = Release|x64
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Release|x86.ActiveCfg = Release|Win32
+		{EE313BF7-DE88-439F-9557-D455DAAAF298}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA94EC35-A90B-4E77-8CCF-6DDA5D8B5F73}
+	EndGlobalSection
+EndGlobal
